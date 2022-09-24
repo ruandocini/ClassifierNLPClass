@@ -5,6 +5,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score
 
 
+
+
 def categorical_to_numerical(data: pd.DataFrame):
     data["req_type"] = data["req_type"].map(
         {"ambiente": 1, "industria": 2, "justica": 3}
